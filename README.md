@@ -7,7 +7,7 @@
 [![](https://img.shields.io/badge/Telegram-News-green)](https://t.me/ClashR_For_Windows_News)
 [![](https://img.shields.io/badge/Telegram-讨论组-green)](https://t.me/ClashR_For_Windows)
 
-现clash for Windows是v0.9.2
+现clash for Windows是v0.9.3
 
 [![](https://img.shields.io/badge/GitHub-CFW-blue)](https://github.com/Fndroid/clash_for_windows_pkg)
 
