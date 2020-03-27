@@ -2,6 +2,8 @@
 
 采用用原版Clash For Windows替换内核方法替换
 
+从9.0.3版本后加入汉化版和英文原版
+
 方便大家使用
 
 [![](https://img.shields.io/badge/Telegram-News-green)](https://t.me/ClashR_For_Windows_News)
