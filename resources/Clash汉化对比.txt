@@ -1,0 +1,57 @@
+"General"
+
+"Allow LAN"
+"Home Directory"
+"Open Folder"
+"GeoIP Database"
+"UWP Loopback"
+"Launch Helper"
+"TAP Device"
+"Install"
+"General YAML"
+"Text Mode Edit"
+"Theme"
+"Light"
+"Dark"
+"System Proxy"
+"Start with Windows"
+
+
+"Proxies"
+
+
+"Profiles"
+
+"Download from a URL"
+"Download"
+"Edit in text mode"
+"Edit policies"
+"Edit rules"
+"Duplicate profile"
+"Change Information"
+"Update this profile"
+"Edit profile information"
+"Name"
+"URL"
+"Update Interval(hour)"
+"Cancel"
+"OK"
+"Copy profile"
+"Input a new file name"
+
+
+"Logs"
+
+"Clear"
+"Stop"
+
+
+"Connections"
+
+"Upload Speed""""""""
+
+
+"Feedback"
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
