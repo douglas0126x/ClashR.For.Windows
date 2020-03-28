@@ -1,57 +1,65 @@
-"General"
+"General"			"常规"
 
-"Allow LAN"
-"Home Directory"
-"Open Folder"
-"GeoIP Database"
-"UWP Loopback"
-"Launch Helper"
-"TAP Device"
-"Install"
-"General YAML"
-"Text Mode Edit"
-"Theme"
-"Light"
-"Dark"
-"System Proxy"
-"Start with Windows"
-
-
-"Proxies"
+"Allow LAN"		"允许局域网连接"
+"Home Directory"		"配置文件目录"
+"Open Folder"		"打开文件夹"
+"GeoIP Database"		"GeoIP 数据库"
+"UWP Loopback"		"UWP解锁工具"
+"Launch Helper"		"启动程序"
+"TAP Device"		"虚拟网卡驱动"
+"Install"			"安装"
+"General YAML"		"基础设置"
+"Text Mode Edit"		"编辑"
+"Theme"			"主题"
+"Light"			"白亮"
+"Dark"			"暗黑"
+"System Proxy"		"系统代理"
+"Start with Windows"	"开机启动"
 
 
-"Profiles"
-
-"Download from a URL"
-"Download"
-"Edit in text mode"
-"Edit policies"
-"Edit rules"
-"Duplicate profile"
-"Change Information"
-"Update this profile"
-"Edit profile information"
-"Name"
-"URL"
-"Update Interval(hour)"
-"Cancel"
-"OK"
-"Copy profile"
-"Input a new file name"
+"Proxies"			"节点"
 
 
-"Logs"
+"Profiles"			"订阅"
 
-"Clear"
-"Stop"
+"Download from a URL"	"填入订阅地址"
+"Download"		"下载"
+"Edit in text mode"		"编辑文本文件"
+"Edit policies"		"编辑节点"
+"Edit rules"		"编辑规则"
+"Duplicate profile"		"创建副本"
+"Change Information"	"修改订阅信息"
+"Update this profile"		"更新订阅"
+"Edit profile information"	"编辑订阅信息"
+"Name"			"备注"
+"URL"			"地址"
+"Update Interval(hour)"	"更新间隔(小时)"
+"Cancel"			"取消"
+"OK"			"确认"
+"Copy profile"		"复制订阅"
+"Input a new file name"	"填入新的备注"
 
 
-"Connections"
+"Logs"			"日志"
 
-"Upload Speed""""""""
-
-
-"Feedback"
+"Clear"			"清理"
+"Stop"			"停止"
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Connections"		"连接信息"
+
+"Upload Speed"		"上传速度"
+"Download Speed"		"下载速度"
+"Upload Traffic"		"上传流量"
+"Download Traffic"		"下载流量"
+"Time"			"时间"
+"Close ALL"		"关闭所有"
+"Active Connections"	"活动连接"
+
+
+
+"Feedback"		"关于"
+
+
+"Connected"		"连接中"
+"Connected"		"断开连接"
