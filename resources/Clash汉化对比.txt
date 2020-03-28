@@ -24,20 +24,24 @@
 
 "Download from a URL"	"填入订阅地址"
 "Download"		"下载"
+"Downloading"		"下载中……"
+"Success!"			"成功!"
 "Edit in text mode"		"编辑文本文件"
 "Edit policies"		"编辑节点"
 "Edit rules"		"编辑规则"
 "Duplicate profile"		"创建副本"
-"Change Information"	"修改订阅信息"
+"Change information"	"修改订阅信息"
 "Update this profile"		"更新订阅"
 "Edit profile information"	"编辑订阅信息"
 "Name"			"备注"
 "URL"			"地址"
-"Update Interval(hour)"	"更新间隔(小时)"
+"Update Interval (hour)"	"更新间隔 (小时)"
 "Cancel"			"取消"
 "OK"			"确认"
+"Save"			"保存"
 "Copy profile"		"复制订阅"
 "Input a new file name"	"填入新的备注"
+"Last Updated: "		"上一次更新: "
 
 
 "Logs"			"日志"
@@ -53,7 +57,7 @@
 "Upload Traffic"		"上传流量"
 "Download Traffic"		"下载流量"
 "Time"			"时间"
-"Close ALL"		"关闭所有"
+"Close All"			"关闭所有"
 "Active Connections"	"活动连接"
 
 
@@ -61,5 +65,7 @@
 "Feedback"		"关于"
 
 
-"Connected"		"连接中"
-"Connected"		"断开连接"
+"Connected"		"连接成功"
+"Disconnected"		"断开连接"
+
+"Clash is running in the background","Enjoy your free time!"	"ClashR 已经在后台运行","享受你的自由时光！"

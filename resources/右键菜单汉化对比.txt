@@ -1,0 +1,7 @@
+"Dashboard"		"显示面板"
+"Force Quit"		"强制退出"
+"Quit"			"退出"
+"Clash for Windows"		"ClashR for Windows"
+"Dashboard has crashed!"	"面板崩溃了！"
+"Reload"			"刷新"
+"Exit"			"退出"
