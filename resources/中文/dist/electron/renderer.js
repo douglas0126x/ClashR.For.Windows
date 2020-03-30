@@ -13404,7 +13404,7 @@ function (e, t, n) {
                                                         [n("div", {
                                                             staticClass: "item-left"
                                                         },
-                                                            [e._v("虚拟网卡驱动")]), e._v(" "), n("div", {
+                                                            [e._v("TAP模式")]), e._v(" "), n("div", {
                                                                 class: ["item-right", "clickable-" + e.theme],
                                                                 on: {
                                                                     click: function (t) {
