@@ -14725,7 +14725,7 @@ function (e, t, n) {
                 })),
             methods: {
                 select: function (e) {
-                    this.$electron.shell.openExternal(["https://t.me/Rules_lhie1", "https://t.me/Fndroids", "https://github.com/BoyceLig/ClashR.For.Windows", "https://github.com/Dreamacro/clash", "https://github.com/yichengchen/clashX", "https://docs.cfw.lbyczf.com/", "https://fndroid.github.io/clash-config-builder/", "https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager", "https://github.com/Noisyfox/sysproxy", "https://github.com/eycorsican/go-tun2socks", "https://dev.maxmind.com/geoip/geoip2/geolite2/", "https://github.com/twitter/twemoji"][e])
+                    this.$electron.shell.openExternal(["https://t.me/ClashR_For_Windows", "https://github.com/Fndroid/clash_for_windows_pkg", "https://github.com/BoyceLig/ClashR.For.Windows", "https://github.com/Dreamacro/clash", "https://github.com/yichengchen/clashX", "https://docs.cfw.lbyczf.com/", "https://fndroid.github.io/clash-config-builder/", "https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager", "https://github.com/Noisyfox/sysproxy", "https://github.com/eycorsican/go-tun2socks", "https://dev.maxmind.com/geoip/geoip2/geolite2/", "https://github.com/twitter/twemoji","https://t.me/ClashR_For_Windows_News"][e])
                 },
                 adClick: function (e) {
                     this.$electron.shell.openExternal(this.adImages[e].click)
@@ -14782,11 +14782,35 @@ function (e, t, n) {
                                 class: ["chat-item-" + e.theme],
                                 on: {
                                     click: function () {
+                                        return e.select(1)
+                                    }
+                                }
+                            },
+                                [e._v("Clash-Github")]), e._v(" "), n("div",{
+                                class: ["chat-item-" + e.theme],
+                                on: {
+                                    click: function () {
                                         return e.select(2)
                                     }
                                 }
                             },
-                                [e._v("ClashR Github")]), e._v(" "), n("div", {
+                                [e._v("ClashR-Github")]), e._v(" "), n("div", {
+                                class: ["chat-item-" + e.theme],
+                                on: {
+                                    click: function () {
+                                        return e.select(12)
+                                    }
+                                }
+                            },
+                                [e._v("Telegram公告")]), e._v(" "), n("div", {
+                                class: ["chat-item-" + e.theme],
+                                on: {
+                                    click: function () {
+                                        return e.select(0)
+                                    }
+                                }
+                            },
+                                [e._v("Telegram讨论组")]), e._v(" "), n("div", {
                                     class: ["chat-item-" + e.theme],
                                     on: {
                                         click: function () {
