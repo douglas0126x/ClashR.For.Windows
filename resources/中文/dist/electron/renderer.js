@@ -8782,16 +8782,16 @@ function (e, t, n) {
                     title: "常规"
                 },
                 {
-                    title: "节点"
+                    title: "代理"
                 },
                 {
-                    title: "订阅"
+                    title: "配置"
                 },
                 {
                     title: "日志"
                 },
                 {
-                    title: "连接信息"
+                    title: "连接"
                 },
                 {
                     title: "关于"
@@ -11778,7 +11778,7 @@ function (e, t, n) {
                                         n.prev = 1,
                                         n.next = 4,
                                         t.$input({
-                                            title: "复制订阅",
+                                            title: "复制配置",
                                             data: r
                                         });
                                 case 4:
@@ -12384,7 +12384,7 @@ function (e, t, n) {
                                 }],
                                 attrs: {
                                     type: "text",
-                                    placeholder: "填入订阅地址"
+                                    placeholder: "填入配置地址"
                                 },
                                 domProps: {
                                     value: e.subUrl
@@ -12498,7 +12498,7 @@ function (e, t, n) {
                                                                     }), e._v(" "), n("img", {
                                                                         staticClass: "item-icon",
                                                                         attrs: {
-                                                                            title: "编辑节点",
+                                                                            title: "编辑代理节点",
                                                                             src: "static/imgs/edit-proxy-icon.png"
                                                                         },
                                                                         on: {
@@ -12540,7 +12540,7 @@ function (e, t, n) {
                                                                     }), e._v(" "), n("img", {
                                                                         staticClass: "item-icon item-icon-right",
                                                                         attrs: {
-                                                                            title: "编辑订阅信息",
+                                                                            title: "编辑配置信息",
                                                                             src: "static/imgs/info-icon2.png"
                                                                         },
                                                                         on: {
@@ -14775,7 +14775,7 @@ function (e, t, n) {
                     [n("div", {
                         staticClass: "title"
                     },
-                        [e._v("Relevance")]), e._v(" "), n("div", {
+                        [e._v("相关链接")]), e._v(" "), n("div", {
                             staticClass: "chat-list"
                         },
                             [n("div", {
@@ -14786,7 +14786,7 @@ function (e, t, n) {
                                     }
                                 }
                             },
-                                [e._v("Github")]), e._v(" "), n("div", {
+                                [e._v("ClashR Github")]), e._v(" "), n("div", {
                                     class: ["chat-item-" + e.theme],
                                     on: {
                                         click: function () {
@@ -14808,7 +14808,7 @@ function (e, t, n) {
                                             [n("div", {
                                                 staticClass: "title"
                                             },
-                                                [e._v("Thanks")]), e._v(" "), n("div", {
+                                                [e._v("鸣谢")]), e._v(" "), n("div", {
                                                     staticClass: "chat-list"
                                                 },
                                                     [n("div", {
@@ -14873,7 +14873,7 @@ function (e, t, n) {
                                                                                     [n("div", {
                                                                                         staticClass: "title"
                                                                                     },
-                                                                                        [e._v("Advertisement")]), e._v(" "), n("div", {
+                                                                                        [e._v("广告")]), e._v(" "), n("div", {
                                                                                             staticClass: "ad-img-list"
                                                                                         },
                                                                                             e._l(e.adImages, (function (t, r) {
@@ -14903,10 +14903,10 @@ function (e, t, n) {
                 [n("div", {
                     staticClass: "title"
                 },
-                    [e._v("Developer")]), e._v(" "), n("div", {
+                    [e._v("开发者")]), e._v(" "), n("div", {
                         staticClass: "content"
                     },
-                        [e._v("404 Frror")])])
+                        [e._v("Boyce Lig")])])
         }], !1, null, "3dc20c61", null));
     x.options.__file = "AboutView.vue",
         t.
@@ -15085,7 +15085,7 @@ function (e, t, n) {
                 [n("div", {
                     staticClass: "title"
                 },
-                    [n("div", [e._v("Requests in " + e._s(this.mode) + " mode")]), e._v(" "), n("div", {
+                    [n("div", [e._v(e._s(this.mode) + " 模式下所代理的请求")	]), e._v(" "), n("div", {
                         staticClass: "btns"
                     },
                         [n("div", {
@@ -15094,7 +15094,7 @@ function (e, t, n) {
                                 click: e.handleClear
                             }
                         },
-                            [e._v("清理")]), e._v(" "), n("div", {
+                            [e._v("清除")]), e._v(" "), n("div", {
                                 class: e.buttonStyle,
                                 on: {
                                     click: e.handleBtnClick
@@ -15169,7 +15169,7 @@ function (e, t, n) {
                         downloadTotal: 0,
                         connections: []
                     },
-                    labels: ["上传速度", "下载速度", "上传流量", "下载流量", "时间"],
+                    labels: ["上传速度", "下载速度", "上传流量", "下载流量", "连接时间"],
                     labelSelected: 4
                 }
             },
@@ -15325,13 +15325,13 @@ function (e, t, n) {
                     [n("div", {
                         staticClass: "title"
                     },
-                        [e._v(e._s("活动连接"))]), e._v(" "), n("div", {
+                        [e._v(e._s("活动链接"))]), e._v(" "), n("div", {
                             staticClass: "header-right"
                         },
                             [n("div", {
                                 staticClass: "total-hint"
                             },
-                                [e._v(e._s("Total: ↑" + e.traffic(e.data.uploadTotal) + " ↓" + e.traffic(e.data.downloadTotal)))])])]), e._v(" "), n("div", {
+                                [e._v(e._s("总计: ↑" + e.traffic(e.data.uploadTotal) + " ↓" + e.traffic(e.data.downloadTotal)))])])]), e._v(" "), n("div", {
                                     staticClass: "control-view"
                                 },
                                     [n("div", {

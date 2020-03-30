@@ -22,24 +22,24 @@
 
 "Profiles"			"配置"
 
-"Download from a URL"	"填入订阅地址"
+"Download from a URL"	"填入配置地址"
 "Download"		"下载"
 "Downloading"		"下载中……"
-"Success!"			"成功!"
+"Success!"		"成功!"
 "Edit in text mode"		"编辑文本文件"
-"Edit policies"		"编辑节点"
+"Edit policies"		"编辑配置节点"
 "Edit rules"		"编辑规则"
 "Duplicate profile"		"创建副本"
-"Change information"	"修改订阅信息"
-"Update this profile"		"更新订阅"
-"Edit profile information"	"编辑订阅信息"
+"Change information"	"修改配置信息"
+"Update this profile"	"更新配置"
+"Edit profile information"	"编辑配置信息"
 "Name"			"备注"
 "URL"			"地址"
 "Update Interval (hour)"	"更新间隔 (小时)"
 "Cancel"			"取消"
 "OK"			"确认"
 "Save"			"保存"
-"Copy profile"		"复制订阅"
+"Copy profile"		"复制配置"
 "Input a new file name"	"填入新的备注"
 "Last Updated: "		"上次更新: "
 
@@ -48,12 +48,12 @@
 
 "Clear"			"清除"
 "Stop"			"停止"
-"Requests in Rule mode"	"Rule 模式下所代理的请求"
+("Requests in " + e._s(this.mode) + " mode")	(e._s(this.mode) + "模式下所代理的请求")	
 
 
 "Connections"		"连接"
 
-"Total"			"总计"
+"Total: ↑"			"总计: ↑"
 "Upload Speed"		"上传速度"
 "Download Speed"		"下载速度"
 "Upload Traffic"		"上传流量"
@@ -63,11 +63,12 @@
 "Active Connections"	"活动链接"
 
 
-
 "Feedback"		"关于"
+
 "Developer"		"开发者"
 "Relevance"		"相关链接"
 "Thanks"			"鸣谢"
+"Advertisement"		""
 
 
 "Connected"		"连接成功"
