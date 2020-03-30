@@ -12970,11 +12970,11 @@ function (e, t, n) {
                 itemTheme: function (e) {
                     var t = [];
                     return this.isClickableValue(e) && t.push("clickable-" + this.theme),
-                        "允许局域网连接" === e.key && t.push("item-path"),
+                        "配置文件目录" === e.key && t.push("item-path"),
                         t
                 },
                 isClickableValue: function (e) {
-                    return - 1 < ["Port", "Socks Port", "允许局域网连接", "GeoIP数据库"].indexOf(e.key)
+                    return - 1 < ["Port", "Socks Port", "配置文件目录", "GeoIP数据库"].indexOf(e.key)
                 },
                 showPortContrller: function (e) {
                     return - 1 < ["Port", "Socks Port"].indexOf(e.key)
@@ -13213,7 +13213,7 @@ function (e, t, n) {
                                                     value: u[e]
                                                 }
                                         }))).push({
-                                            key: "允许局域网连接",
+                                            key: "配置文件目录",
                                             value: "打开文件夹"
                                         }),
                                         r.push({
