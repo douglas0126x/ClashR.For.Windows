@@ -6,7 +6,7 @@
 "GeoIP Database"		"GeoIP 数据库"
 "UWP Loopback"		"UWP解锁工具"
 "Launch Helper"		"启动程序"
-"TAP Device"		"虚拟网卡驱动"
+"TAP Device"		"TAP 模式"
 "Install"			"安装"
 "General YAML"		"基础设置"
 "Text Mode Edit"		"编辑"
