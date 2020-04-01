@@ -13,7 +13,7 @@
 
 [![](https://img.shields.io/badge/GitHub-CFW-blue)](https://github.com/Fndroid/clash_for_windows_pkg)
 
-clashr内核是v0.18.0.4
+clashr内核是v0.19.0.1
 
 [![](https://img.shields.io/badge/GitHub-CFWRCore-blue)](https://github.com/frainzy1477/clashrdev)
 
