@@ -26,6 +26,7 @@
 "Download"		"下载"
 "Downloading"		"下载中……"
 "Success!"		"成功!"
+"Error!"			"错误!"
 "Edit in text mode"		"编辑文本文件"
 "Edit policies"		"编辑配置节点"
 "Edit rules"		"编辑规则"
@@ -42,12 +43,20 @@
 "Copy profile"		"复制配置"
 "Input a new file name"	"填入新的备注"
 "Last Updated: "		"上次更新: "
+"Add"			"添加"
+"Top 100 matching rules(" + e._s(e.memoryData.length) + ")."	"前100个匹配规则(" + e._s(e.memoryData.length) + ")."
+"Please confirm"		"请确认"
+"config.yaml and country.mmdb will be removed."	"config.yaml和country.mmdb将被删除。"
+'Are you sure to delete "' + a + '"?'			'您确定要删除 "' + a + '"?'
+"Yes", "No"		"是", "否"
+"fiter by keywords"		"按关键字过滤"
 
 
 "Logs"			"日志"
 
 "Clear"			"清除"
 "Stop"			"停止"
+"Start"			"开始"
 ("Requests in " + e._s(this.mode) + " mode")	(e._s(this.mode) + "模式下所代理的请求")	
 
 
@@ -66,12 +75,18 @@
 "Feedback"		"关于"
 
 "Developer"		"开发者"
+"404 Frror"		"Boyce Lig"
 "Relevance"		"相关链接"
 "Thanks"			"鸣谢"
-"Advertisement"		""
+"Advertisement"		"广告"
 
 
 "Connected"		"连接成功"
 "Disconnected"		"断开连接"
 
-"Clash is running in the background","Enjoy your free time!"	"ClashR 已经在后台运行","享受你的自由时光！"
+"Clash is running in the background", "Enjoy your free time!"	"ClashR 已经在后台运行", "享受你的自由时光！"
+
+"oops, got an error here"	"卧槽，这里出现错误"
+"Open logs folder"		"打开日志文件夹"
+"Try to repair"		"尝试修复"
+"Could not connect to Clash Core"	"无法连接到Clash Core"
