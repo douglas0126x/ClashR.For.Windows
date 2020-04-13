@@ -2,7 +2,7 @@ module.exports = function(t)
 {
 	function n(r)
 	{
-		if (e[r]) return e[r].exports;
+		if(e[r]) return e[r].exports;
 		var o = e[r] = {
 			i: r,
 			l: !1,
@@ -30,15 +30,15 @@ module.exports = function(t)
 		})
 	}, n.t = function(t, e)
 	{
-		if (1 & e && (t = n(t)), 8 & e) return t;
-		if (4 & e && "object" == typeof t && t && t.__esModule) return t;
+		if(1 & e && (t = n(t)), 8 & e) return t;
+		if(4 & e && "object" == typeof t && t && t.__esModule) return t;
 		var r = Object.create(null);
-		if (n.r(r), Object.defineProperty(r, "default",
+		if(n.r(r), Object.defineProperty(r, "default",
 		{
 			enumerable: !0,
 			value: t
 		}), 2 & e && "string" != typeof t)
-			for (var o in t) n.d(r, o, function(n)
+			for(var o in t) n.d(r, o, function(n)
 			{
 				return t[n]
 			}.bind(null, o));
@@ -87,7 +87,7 @@ module.exports = function(t)
 	var r = e(7);
 	t.exports = function(t)
 	{
-		if (!r(t)) throw TypeError(t + " is not an object!");
+		if(!r(t)) throw TypeError(t + " is not an object!");
 		return t
 	}
 }, function(t, n, e)
@@ -115,17 +115,17 @@ module.exports = function(t)
 				v = t & s.G,
 				d = t & s.S,
 				y = t & s.P,
-				g = t & s.B,
-				m = t & s.W,
+				m = t & s.B,
+				g = t & s.W,
 				x = v ? o : o[n] || (o[n] = {}),
 				w = x[a],
-				_ = v ? r : d ? r[n] : (r[n] ||
+				b = v ? r : d ? r[n] : (r[n] ||
 				{})[a];
-			for (f in v && (e = n), e)(l = !h && _ && void 0 !== _[f]) && u(x, f) || (p = l ? _[f] : e[f], x[f] = v && "function" != typeof _[f] ? e[f] : g && l ? i(p, r) : m && _[f] == p ? function(t)
+			for(f in v && (e = n), e)(l = !h && b && void 0 !== b[f]) && u(x, f) || (p = l ? b[f] : e[f], x[f] = v && "function" != typeof b[f] ? e[f] : m && l ? i(p, r) : g && b[f] == p ? function(t)
 			{
 				var n = function(n, e, r)
 				{
-					if (this instanceof t)
+					if(this instanceof t)
 					{
 						switch (arguments.length)
 						{
@@ -190,7 +190,7 @@ module.exports = function(t)
 {
 	t.exports = function(t)
 	{
-		if ("function" != typeof t) throw TypeError(t + " is not a function!");
+		if("function" != typeof t) throw TypeError(t + " is not a function!");
 		return t
 	}
 }, function(t, n, e)
@@ -201,13 +201,13 @@ module.exports = function(t)
 		c = Object.defineProperty;
 	n.f = e(8) ? Object.defineProperty : function(t, n, e)
 	{
-		if (r(t), n = i(n, !0), r(e), o) try
+		if(r(t), n = i(n, !0), r(e), o) try
 		{
 			return c(t, n, e)
 		}
 		catch (n)
 		{}
-		if ("get" in e || "set" in e) throw TypeError("Accessors not supported!");
+		if("get" in e || "set" in e) throw TypeError("Accessors not supported!");
 		return "value" in e && (t[n] = e.value), t
 	}
 }, function(t)
@@ -237,7 +237,7 @@ module.exports = function(t)
 {
 	t.exports = function(t)
 	{
-		if (null == t) throw TypeError("Can't call method on  " + t);
+		if(null == t) throw TypeError("Can't call method on  " + t);
 		return t
 	}
 }, function(t)
@@ -306,7 +306,7 @@ module.exports = function(t)
 		var n, e;
 		this.promise = new t((function(t, r)
 		{
-			if (null != n || null != e) throw TypeError("Bad Promise constructor");
+			if(null != n || null != e) throw TypeError("Bad Promise constructor");
 			n = t, e = r
 		})), this.resolve = o(n), this.reject = o(e)
 	}
@@ -340,34 +340,34 @@ module.exports = function(t)
 		{
 			return this
 		};
-	t.exports = function(t, n, e, y, g, m, x)
+	t.exports = function(t, n, e, y, m, g, x)
 	{
 		a(e, n, y);
-		var w, _, b, O = function(t)
+		var w, b, _, O = function(t)
 			{
-				return !p && t in P ? P[t] : function()
+				return !p && t in M ? M[t] : function()
 				{
 					return new e(this, t)
 				}
 			},
 			j = n + " Iterator",
-			S = g == v,
+			S = m == v,
 			L = !1,
-			P = t.prototype,
-			E = P[l] || P["@@iterator"] || g && P[g],
-			M = E || O(g),
-			T = g ? S ? O("entries") : M : void 0,
-			k = "Array" == n && P.entries || E;
-		if (k && ((b = f(k.call(new t))) !== Object.prototype && b.next && (s(b, j, !0), !r && "function" != typeof b[l] && c(b, l, d))), S && E && E.name !== v && (L = !0, M = function()
+			M = t.prototype,
+			P = M[l] || M["@@iterator"] || m && M[m],
+			E = P || O(m),
+			k = m ? S ? O("entries") : E : void 0,
+			T = "Array" == n && M.entries || P;
+		if(T && ((_ = f(T.call(new t))) !== Object.prototype && _.next && (s(_, j, !0), !r && "function" != typeof _[l] && c(_, l, d))), S && P && P.name !== v && (L = !0, E = function()
 		{
-			return E.call(this)
-		}), (!r || x) && (p || L || !P[l]) && c(P, l, M), u[n] = M, u[j] = d, g)
-			if (w = {
-				values: S ? M : O(v),
-				keys: m ? M : O(h),
-				entries: T
+			return P.call(this)
+		}), (!r || x) && (p || L || !M[l]) && c(M, l, E), u[n] = E, u[j] = d, m)
+			if(w = {
+				values: S ? E : O(v),
+				keys: g ? E : O(h),
+				entries: k
 			}, x)
-				for (_ in w) _ in P || i(P, _, w[_]);
+				for(b in w) b in M || i(M, b, w[b]);
 			else o(o.P + o.F * (p || L), n, w);
 		return w
 	}
@@ -492,15 +492,15 @@ module.exports = function(t)
 		v = f.MessageChannel,
 		d = f.Dispatch,
 		y = 0,
-		g = {},
-		m = "onreadystatechange",
+		m = {},
+		g = "onreadystatechange",
 		x = function()
 		{
 			var t = +this;
-			if (g.hasOwnProperty(t))
+			if(m.hasOwnProperty(t))
 			{
-				var n = g[t];
-				delete g[t], n()
+				var n = m[t];
+				delete m[t], n()
 			}
 		},
 		w = function(t)
@@ -509,14 +509,14 @@ module.exports = function(t)
 		};
 	p && h || (p = function(t)
 	{
-		for (var n = [], e = 1; arguments.length > e;) n.push(arguments[e++]);
-		return g[++y] = function()
+		for(var n = [], e = 1; arguments.length > e;) n.push(arguments[e++]);
+		return m[++y] = function()
 		{
 			u("function" == typeof t ? t : Function(t), n)
 		}, r(y), y
 	}, h = function(t)
 	{
-		delete g[t]
+		delete m[t]
 	}, "process" == e(14)(l) ? r = function(t)
 	{
 		l.nextTick(c(x, t, 1))
@@ -527,9 +527,9 @@ module.exports = function(t)
 		.port2, o.port1.onmessage = w, r = c(i.postMessage, i, 1)) : f.addEventListener && "function" == typeof postMessage && !f.importScripts ? (r = function(t)
 	{
 		f.postMessage(t + "", "*")
-	}, f.addEventListener("message", w, !1)) : r = m in s("script") ? function(t)
+	}, f.addEventListener("message", w, !1)) : r = g in s("script") ? function(t)
 	{
-		a.appendChild(s("script"))[m] = function()
+		a.appendChild(s("script"))[g] = function()
 		{
 			a.removeChild(this), x.call(t)
 		}
@@ -566,7 +566,7 @@ module.exports = function(t)
 		i = e(23);
 	t.exports = function(t, n)
 	{
-		if (r(t), o(n) && n.constructor === t) return n;
+		if(r(t), o(n) && n.constructor === t) return n;
 		var e = i.f(t);
 		return (0, e.resolve)(n), e.promise
 	}
@@ -630,8 +630,8 @@ module.exports = function(t)
 	}(e(81));
 	n.default = r.default || function(t)
 	{
-		for (var n, e = 1; e < arguments.length; e++)
-			for (var r in n = arguments[e]) Object.prototype.hasOwnProperty.call(n, r) && (t[r] = n[r]);
+		for(var n, e = 1; e < arguments.length; e++)
+			for(var r in n = arguments[e]) Object.prototype.hasOwnProperty.call(n, r) && (t[r] = n[r]);
 		return t
 	}
 }, function(t, n, e)
@@ -644,7 +644,7 @@ module.exports = function(t)
 			n = {};
 		try
 		{
-			var r = JSON.parse(v.readFileSync(g, "utf8"))
+			var r = JSON.parse(v.readFileSync(m, "utf8"))
 				.bounds;
 			r && (n = r)
 		}
@@ -671,7 +671,7 @@ module.exports = function(t)
 		.setMenu(null), d.webContents.on("will-navigate", (function(t)
 			{
 				return t.preventDefault()
-			})), d.loadURL(m,
+			})), d.loadURL(g,
 			{
 				userAgent: "ClashforWindows/7.0 (Windows NT 10.0; Win64; x64) Chrome/76.0.3809.126 Electron/6.0.3"
 			}), d.on("hide", (function()
@@ -690,7 +690,7 @@ module.exports = function(t)
 			{
 				try
 				{
-					v.writeFileSync(g, s()(
+					v.writeFileSync(m, s()(
 					{
 						bounds: d.getBounds()
 					}))
@@ -702,13 +702,13 @@ module.exports = function(t)
 				var e, r;
 				return i.a.wrap((function(t)
 				{
-					for (;;) switch (t.prev = t.next)
+					for(;;) switch (t.prev = t.next)
 					{
 						case 0:
 							return e = {
 								type: "error",
 								title: "ClashR for Windows",
-								message: "面板崩溃了!",
+								message: "面板崩溃了！",
 								buttons: ["刷新", "退出"]
 							}, t.next = 3, p.dialog.showMessageBox(d, e);
 						case 3:
@@ -729,7 +729,7 @@ module.exports = function(t)
 				d.show()
 			})), p.ipcMain.on("cleanup-done", (function()
 			{
-				console.log("cleanup done"), p.app.isQuiting = !0, p.app.quit()
+				p.app.isQuiting = !0, p.app.quit()
 			})), p.ipcMain.on("status-changed", (function(t, n)
 			{
 				try
@@ -751,8 +751,59 @@ module.exports = function(t)
 			label: "显示面板",
 			click: function()
 			{
-				d.show()
+				return d.show()
 			}
+		},
+		{
+			type: "separator"
+		},
+		{
+			label: "系统代理",
+			type: "checkbox",
+			id: "system-proxy",
+			click: function(t)
+			{
+				var n = t.checked;
+				d.webContents.send("system-proxy-changed", n)
+			}
+		},
+		{
+			type: "separator"
+		},
+		{
+			label: "Proxy Mode",
+			id: "mode",
+			submenu: [
+			{
+				label: "全局",
+				type: "radio",
+				id: "mode-global",
+				click: function()
+				{
+					return d.webContents.send("mode-changed", "Global")
+				}
+			},
+			{
+				label: "规则",
+				type: "radio",
+				id: "mode-rule",
+				click: function()
+				{
+					return d.webContents.send("mode-changed", "Rule")
+				}
+			},
+			{
+				label: "直连",
+				type: "radio",
+				id: "mode-direct",
+				click: function()
+				{
+					return d.webContents.send("mode-changed", "Direct")
+				}
+			}]
+		},
+		{
+			type: "separator"
 		},
 		{
 			label: "强制退出",
@@ -765,10 +816,25 @@ module.exports = function(t)
 			label: "退出",
 			click: function()
 			{
-				d.webContents.send("app-exit")
+				return d.webContents.send("app-exit")
 			}
 		}]);
-		y.setContextMenu(o)
+		p.ipcMain.on("clash-core-status-change", (function(t, n)
+		{
+			var e = o.getMenuItemById("system-proxy");
+			e && (e.enabled = 1 !== n);
+			var r = o.getMenuItemById("mode");
+			r && (r.enabled = 1 !== n)
+		})), p.ipcMain.on("mode-changed", (function(t, n)
+		{
+			var e = "mode-" + n.toLowerCase(),
+				r = o.getMenuItemById(e);
+			r && (r.checked = !0)
+		})), p.ipcMain.on("system-proxy-changed", (function(t, n)
+		{
+			var e = o.getMenuItemById("system-proxy");
+			e && (e.checked = n)
+		})), y.setContextMenu(o)
 	}
 	e.r(n);
 	var o = e(25),
@@ -787,8 +853,8 @@ module.exports = function(t)
 		.replace(/\\/g, "\\\\"), p.app.disableHardwareAcceleration();
 	var d = void 0,
 		y = void 0,
-		g = h.join(p.app.getPath("userData"), "window_ocnfig.json"),
-		m = "file://" + __dirname + "/index.html",
+		m = h.join(p.app.getPath("userData"), "window_ocnfig.json"),
+		g = "file://" + __dirname + "/index.html",
 		x = p.app.requestSingleInstanceLock();
 	p.app.setAppUserModelId("com.lbyczf.clashwin"), p.app.setAsDefaultProtocolClient("clash"), x ? (p.app.on("second-instance", (function(t, n)
 	{
@@ -809,7 +875,7 @@ module.exports = function(t)
 		o = r.regeneratorRuntime && 0 <= Object.getOwnPropertyNames(r)
 		.indexOf("regeneratorRuntime"),
 		i = o && r.regeneratorRuntime;
-	if (r.regeneratorRuntime = void 0, t.exports = e(46), o) r.regeneratorRuntime = i;
+	if(r.regeneratorRuntime = void 0, t.exports = e(46), o) r.regeneratorRuntime = i;
 	else try
 	{
 		delete r.regeneratorRuntime
@@ -875,11 +941,11 @@ module.exports = function(t)
 			function n(e, o, i, c)
 			{
 				var u = r(t[e], t, o);
-				if ("throw" !== u.type)
+				if("throw" !== u.type)
 				{
 					var a = u.arg,
 						s = a.value;
-					return s && "object" == typeof s && g.call(s, "__await") ? Promise.resolve(s.__await)
+					return s && "object" == typeof s && m.call(s, "__await") ? Promise.resolve(s.__await)
 						.then((function(t)
 						{
 							n("next", t, i, c)
@@ -913,45 +979,45 @@ module.exports = function(t)
 			var o = j;
 			return function(i, c)
 			{
-				if (o == L) throw new Error("Generator is already running");
-				if (o == P)
+				if(o == L) throw new Error("Generator is already running");
+				if(o == M)
 				{
-					if ("throw" === i) throw c;
+					if("throw" === i) throw c;
 					return {
 						value: void 0,
 						done: !0
 					}
 				}
-				for (e.method = i, e.arg = c;;)
+				for(e.method = i, e.arg = c;;)
 				{
 					var u = e.delegate;
-					if (u)
+					if(u)
 					{
 						var a = f(u, e);
-						if (a)
+						if(a)
 						{
-							if (a === E) continue;
+							if(a === P) continue;
 							return a
 						}
 					}
-					if ("next" === e.method) e.sent = e._sent = e.arg;
-					else if ("throw" === e.method)
+					if("next" === e.method) e.sent = e._sent = e.arg;
+					else if("throw" === e.method)
 					{
-						if (o == j) throw o = P, e.arg;
+						if(o == j) throw o = M, e.arg;
 						e.dispatchException(e.arg)
 					}
 					else "return" === e.method && e.abrupt("return", e.arg);
 					o = L;
 					var s = r(t, n, e);
-					if ("normal" === s.type)
+					if("normal" === s.type)
 					{
-						if (o = e.done ? P : S, s.arg === E) continue;
+						if(o = e.done ? M : S, s.arg === P) continue;
 						return {
 							value: s.arg,
 							done: e.done
 						}
 					}
-					"throw" === s.type && (o = P, e.method = "throw", e.arg = s.arg)
+					"throw" === s.type && (o = M, e.method = "throw", e.arg = s.arg)
 				}
 			}
 		}
@@ -959,19 +1025,19 @@ module.exports = function(t)
 		function f(t, n)
 		{
 			var e = t.iterator[n.method];
-			if (void 0 === e)
+			if(void 0 === e)
 			{
-				if (n.delegate = null, "throw" === n.method)
+				if(n.delegate = null, "throw" === n.method)
 				{
-					if (t.iterator.return && (n.method = "return", n.arg = void 0, f(t, n), "throw" === n.method)) return E;
+					if(t.iterator.return && (n.method = "return", n.arg = void 0, f(t, n), "throw" === n.method)) return P;
 					n.method = "throw", n.arg = new TypeError("The iterator does not provide a 'throw' method")
 				}
-				return E
+				return P
 			}
 			var o = r(e, t.iterator, n.arg);
-			if ("throw" === o.type) return n.method = "throw", n.arg = o.arg, n.delegate = null, E;
+			if("throw" === o.type) return n.method = "throw", n.arg = o.arg, n.delegate = null, P;
 			var i = o.arg;
-			return i ? i.done ? (n[t.resultName] = i.value, n.next = t.nextLoc, "return" !== n.method && (n.method = "next", n.arg = void 0), n.delegate = null, E) : i : (n.method = "throw", n.arg = new TypeError("iterator result is not an object"), n.delegate = null, E)
+			return i ? i.done ? (n[t.resultName] = i.value, n.next = t.nextLoc, "return" !== n.method && (n.method = "next", n.arg = void 0), n.delegate = null, P) : i : (n.method = "throw", n.arg = new TypeError("iterator result is not an object"), n.delegate = null, P)
 		}
 
 		function l(t)
@@ -999,18 +1065,18 @@ module.exports = function(t)
 
 		function v(t)
 		{
-			if (t)
+			if(t)
 			{
 				var n = t[x];
-				if (n) return n.call(t);
-				if ("function" == typeof t.next) return t;
-				if (!isNaN(t.length))
+				if(n) return n.call(t);
+				if("function" == typeof t.next) return t;
+				if(!isNaN(t.length))
 				{
 					var e = -1,
 						r = function n()
 						{
-							for (; ++e < t.length;)
-								if (g.call(t, e)) return n.value = t[e], n.done = !1, n;
+							for(; ++e < t.length;)
+								if(m.call(t, e)) return n.value = t[e], n.done = !1, n;
 							return n.value = void 0, n.done = !0, n
 						};
 					return r.next = r
@@ -1029,41 +1095,41 @@ module.exports = function(t)
 			}
 		}
 		var y = Object.prototype,
-			g = y.hasOwnProperty,
-			m = "function" == typeof Symbol ? Symbol :
+			m = y.hasOwnProperty,
+			g = "function" == typeof Symbol ? Symbol :
 			{},
-			x = m.iterator || "@@iterator",
-			w = m.asyncIterator || "@@asyncIterator",
-			_ = m.toStringTag || "@@toStringTag",
-			b = "object" == typeof t,
+			x = g.iterator || "@@iterator",
+			w = g.asyncIterator || "@@asyncIterator",
+			b = g.toStringTag || "@@toStringTag",
+			_ = "object" == typeof t,
 			O = n.regeneratorRuntime;
-		if (O) b && (t.exports = O);
+		if(O) _ && (t.exports = O);
 		else
 		{
-			(O = n.regeneratorRuntime = b ? t.exports :
+			(O = n.regeneratorRuntime = _ ? t.exports :
 			{})
 			.wrap = e;
 			var j = "suspendedStart",
 				S = "suspendedYield",
 				L = "executing",
-				P = "completed",
-				E = {},
-				M = {};
-			M[x] = function()
+				M = "completed",
+				P = {},
+				E = {};
+			E[x] = function()
 			{
 				return this
 			};
-			var T = Object.getPrototypeOf,
-				k = T && T(T(v([])));
-			k && k !== y && g.call(k, x) && (M = k);
-			var C = c.prototype = o.prototype = Object.create(M);
-			i.prototype = C.constructor = c, c.constructor = i, c[_] = i.displayName = "GeneratorFunction", O.isGeneratorFunction = function(t)
+			var k = Object.getPrototypeOf,
+				T = k && k(k(v([])));
+			T && T !== y && m.call(T, x) && (E = T);
+			var C = c.prototype = o.prototype = Object.create(E);
+			i.prototype = C.constructor = c, c.constructor = i, c[b] = i.displayName = "GeneratorFunction", O.isGeneratorFunction = function(t)
 			{
 				var n = "function" == typeof t && t.constructor;
 				return !!n && (n === i || "GeneratorFunction" === (n.displayName || n.name))
 			}, O.mark = function(t)
 			{
-				return Object.setPrototypeOf ? Object.setPrototypeOf(t, c) : (t.__proto__ = c, !(_ in t) && (t[_] = "GeneratorFunction")), t.prototype = Object.create(C), t
+				return Object.setPrototypeOf ? Object.setPrototypeOf(t, c) : (t.__proto__ = c, !(b in t) && (t[b] = "GeneratorFunction")), t.prototype = Object.create(C), t
 			}, O.awrap = function(t)
 			{
 				return {
@@ -1080,7 +1146,7 @@ module.exports = function(t)
 					{
 						return t.done ? t.value : i.next()
 					}))
-			}, u(C), C[_] = "Generator", C[x] = function()
+			}, u(C), C[b] = "Generator", C[x] = function()
 			{
 				return this
 			}, C.toString = function()
@@ -1089,14 +1155,14 @@ module.exports = function(t)
 			}, O.keys = function(t)
 			{
 				var n = [];
-				for (var e in t) n.push(e);
+				for(var e in t) n.push(e);
 				return n.reverse(),
 					function e()
 					{
-						for (; n.length;)
+						for(; n.length;)
 						{
 							var r = n.pop();
-							if (r in t) return e.value = r, e.done = !1, e
+							if(r in t) return e.value = r, e.done = !1, e
 						}
 						return e.done = !0, e
 					}
@@ -1104,14 +1170,14 @@ module.exports = function(t)
 				constructor: h,
 				reset: function(t)
 				{
-					if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(p), !t)
-						for (var n in this) "t" === n.charAt(0) && g.call(this, n) && !isNaN(+n.slice(1)) && (this[n] = void 0)
+					if(this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(p), !t)
+						for(var n in this) "t" === n.charAt(0) && m.call(this, n) && !isNaN(+n.slice(1)) && (this[n] = void 0)
 				},
 				stop: function()
 				{
 					this.done = !0;
 					var t = this.tryEntries[0].completion;
-					if ("throw" === t.type) throw t.arg;
+					if("throw" === t.type) throw t.arg;
 					return this.rval
 				},
 				dispatchException: function(t)
@@ -1120,65 +1186,65 @@ module.exports = function(t)
 					{
 						return i.type = "throw", i.arg = t, e.next = n, r && (e.method = "next", e.arg = void 0), !!r
 					}
-					if (this.done) throw t;
-					for (var e = this, r = this.tryEntries.length - 1; 0 <= r; --r)
+					if(this.done) throw t;
+					for(var e = this, r = this.tryEntries.length - 1; 0 <= r; --r)
 					{
 						var o = this.tryEntries[r],
 							i = o.completion;
-						if ("root" === o.tryLoc) return n("end");
-						if (o.tryLoc <= this.prev)
+						if("root" === o.tryLoc) return n("end");
+						if(o.tryLoc <= this.prev)
 						{
-							var c = g.call(o, "catchLoc"),
-								u = g.call(o, "finallyLoc");
-							if (c && u)
+							var c = m.call(o, "catchLoc"),
+								u = m.call(o, "finallyLoc");
+							if(c && u)
 							{
-								if (this.prev < o.catchLoc) return n(o.catchLoc, !0);
-								if (this.prev < o.finallyLoc) return n(o.finallyLoc)
+								if(this.prev < o.catchLoc) return n(o.catchLoc, !0);
+								if(this.prev < o.finallyLoc) return n(o.finallyLoc)
 							}
-							else if (c)
+							else if(c)
 							{
-								if (this.prev < o.catchLoc) return n(o.catchLoc, !0)
+								if(this.prev < o.catchLoc) return n(o.catchLoc, !0)
 							}
 							else
 							{
-								if (!u) throw new Error("try statement without catch or finally");
-								if (this.prev < o.finallyLoc) return n(o.finallyLoc)
+								if(!u) throw new Error("try statement without catch or finally");
+								if(this.prev < o.finallyLoc) return n(o.finallyLoc)
 							}
 						}
 					}
 				},
 				abrupt: function(t, n)
 				{
-					for (var e, r = this.tryEntries.length - 1; 0 <= r; --r)
-						if ((e = this.tryEntries[r])
-							.tryLoc <= this.prev && g.call(e, "finallyLoc") && this.prev < e.finallyLoc)
+					for(var e, r = this.tryEntries.length - 1; 0 <= r; --r)
+						if((e = this.tryEntries[r])
+							.tryLoc <= this.prev && m.call(e, "finallyLoc") && this.prev < e.finallyLoc)
 						{
 							var o = e;
 							break
 						} o && ("break" === t || "continue" === t) && o.tryLoc <= n && n <= o.finallyLoc && (o = null);
 					var i = o ? o.completion :
 					{};
-					return i.type = t, i.arg = n, o ? (this.method = "next", this.next = o.finallyLoc, E) : this.complete(i)
+					return i.type = t, i.arg = n, o ? (this.method = "next", this.next = o.finallyLoc, P) : this.complete(i)
 				},
 				complete: function(t, n)
 				{
-					if ("throw" === t.type) throw t.arg;
-					return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && n && (this.next = n), E
+					if("throw" === t.type) throw t.arg;
+					return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && n && (this.next = n), P
 				},
 				finish: function(t)
 				{
-					for (var n, e = this.tryEntries.length - 1; 0 <= e; --e)
-						if ((n = this.tryEntries[e])
-							.finallyLoc === t) return this.complete(n.completion, n.afterLoc), p(n), E
+					for(var n, e = this.tryEntries.length - 1; 0 <= e; --e)
+						if((n = this.tryEntries[e])
+							.finallyLoc === t) return this.complete(n.completion, n.afterLoc), p(n), P
 				},
 				catch: function(t)
 				{
-					for (var n, e = this.tryEntries.length - 1; 0 <= e; --e)
-						if ((n = this.tryEntries[e])
+					for(var n, e = this.tryEntries.length - 1; 0 <= e; --e)
+						if((n = this.tryEntries[e])
 							.tryLoc === t)
 						{
 							var r = n.completion;
-							if ("throw" === r.type)
+							if("throw" === r.type)
 							{
 								var o = r.arg;
 								p(n)
@@ -1192,7 +1258,7 @@ module.exports = function(t)
 						iterator: v(t),
 						resultName: n,
 						nextLoc: e
-					}, "next" === this.method && (this.arg = void 0), E
+					}, "next" === this.method && (this.arg = void 0), P
 				}
 			}
 		}
@@ -1263,11 +1329,11 @@ module.exports = function(t)
 	var r = e(7);
 	t.exports = function(t, n)
 	{
-		if (!r(t)) return t;
+		if(!r(t)) return t;
 		var e, o;
-		if (n && "function" == typeof(e = t.toString) && !r(o = e.call(t))) return o;
-		if ("function" == typeof(e = t.valueOf) && !r(o = e.call(t))) return o;
-		if (!n && "function" == typeof(e = t.toString) && !r(o = e.call(t))) return o;
+		if(n && "function" == typeof(e = t.toString) && !r(o = e.call(t))) return o;
+		if("function" == typeof(e = t.valueOf) && !r(o = e.call(t))) return o;
+		if(!n && "function" == typeof(e = t.toString) && !r(o = e.call(t))) return o;
 		throw TypeError("Can't convert object to primitive value")
 	}
 }, function(t, n, e)
@@ -1302,7 +1368,7 @@ module.exports = function(t)
 		{
 			var t, n = e(19)("iframe"),
 				r = i.length;
-			for (n.style.display = "none", e(34)
+			for(n.style.display = "none", e(34)
 				.appendChild(n), n.src = "javascript:", (t = n.contentWindow.document)
 				.open(), t.write("<script>document.F=Object<\/script>"), t.close(), s = t.F; r--;) delete s[a][i[r]];
 			return s()
@@ -1320,7 +1386,7 @@ module.exports = function(t)
 	t.exports = e(8) ? Object.defineProperties : function(t, n)
 	{
 		o(t);
-		for (var e, c = i(n), u = c.length, a = 0; u > a;) r.f(t, e = c[a++], n[e]);
+		for(var e, c = i(n), u = c.length, a = 0; u > a;) r.f(t, e = c[a++], n[e]);
 		return t
 	}
 }, function(t, n, e)
@@ -1334,8 +1400,8 @@ module.exports = function(t)
 		var e, u = o(t),
 			a = 0,
 			s = [];
-		for (e in u) e != c && r(u, e) && s.push(e);
-		for (; n.length > a;) r(u, e = n[a++]) && (~i(s, e) || s.push(e));
+		for(e in u) e != c && r(u, e) && s.push(e);
+		for(; n.length > a;) r(u, e = n[a++]) && (~i(s, e) || s.push(e));
 		return s
 	}
 }, function(t, n, e)
@@ -1350,14 +1416,14 @@ module.exports = function(t)
 			var u, a = r(n),
 				s = o(a.length),
 				f = i(c, s);
-			if (t && e != e)
+			if(t && e != e)
 			{
-				for (; s > f;)
-					if ((u = a[f++]) != u) return !0
+				for(; s > f;)
+					if((u = a[f++]) != u) return !0
 			}
 			else
-				for (; s > f; f++)
-					if ((t || f in a) && a[f] === e) return t || f || 0;
+				for(; s > f; f++)
+					if((t || f in a) && a[f] === e) return t || f || 0;
 			return !t && -1
 		}
 	}
@@ -1383,7 +1449,7 @@ module.exports = function(t)
 }, function(t, n, e)
 {
 	e(63);
-	for (var r = e(1), o = e(5), i = e(9), c = e(2)("toStringTag"), u = "CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","), a = 0; a < u.length; a++)
+	for(var r = e(1), o = e(5), i = e(9), c = e(2)("toStringTag"), u = "CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","), a = 0; a < u.length; a++)
 	{
 		var s = u[a],
 			f = r[s],
@@ -1432,50 +1498,50 @@ module.exports = function(t)
 		v = e(67),
 		d = e(68),
 		y = e(37),
-		g = e(38)
+		m = e(38)
 		.set,
-		m = e(73)(),
+		g = e(73)(),
 		x = e(23),
 		w = e(39),
-		_ = e(74),
-		b = e(40),
+		b = e(74),
+		_ = e(40),
 		O = "Promise",
 		j = a.TypeError,
 		S = a.process,
 		L = S && S.versions,
-		P = L && L.v8 || "",
-		E = a[O],
-		M = "process" == f(S),
-		T = function() {},
-		k = o = x.f,
+		M = L && L.v8 || "",
+		P = a[O],
+		E = "process" == f(S),
+		k = function() {},
+		T = o = x.f,
 		C = !! function()
 		{
 			try
 			{
-				var t = E.resolve(1),
+				var t = P.resolve(1),
 					n = (t.constructor = {})[e(2)("species")] = function(t)
 					{
-						t(T, T)
+						t(k, k)
 					};
-				return (M || "function" == typeof PromiseRejectionEvent) && t.then(T) instanceof n && 0 !== P.indexOf("6.6") && -1 === _.indexOf("Chrome/66")
+				return (E || "function" == typeof PromiseRejectionEvent) && t.then(k) instanceof n && 0 !== M.indexOf("6.6") && -1 === b.indexOf("Chrome/66")
 			}
 			catch (n)
 			{}
 		}(),
-		R = function(t)
+		I = function(t)
 		{
 			var n;
 			return p(t) && "function" == typeof(n = t.then) && n
 		},
-		A = function(t, n)
+		R = function(t, n)
 		{
-			if (!t._n)
+			if(!t._n)
 			{
 				t._n = !0;
 				var e = t._c;
-				m((function()
+				g((function()
 				{
-					for (var r = t._v, o = 1 == t._s, i = 0, c = function(n)
+					for(var r = t._v, o = 1 == t._s, i = 0, c = function(n)
 					{
 						var e, i, c, u = o ? n.ok : n.fail,
 							a = n.resolve,
@@ -1483,44 +1549,44 @@ module.exports = function(t)
 							f = n.domain;
 						try
 						{
-							u ? (!o && (2 == t._h && I(t), t._h = 1), !0 === u ? e = r : (f && f.enter(), e = u(r), f && (f.exit(), c = !0)), e === n.promise ? s(j("Promise-chain cycle")) : (i = R(e)) ? i.call(e, a, s) : a(e)) : s(r)
+							u ? (!o && (2 == t._h && N(t), t._h = 1), !0 === u ? e = r : (f && f.enter(), e = u(r), f && (f.exit(), c = !0)), e === n.promise ? s(j("Promise-chain cycle")) : (i = I(e)) ? i.call(e, a, s) : a(e)) : s(r)
 						}
 						catch (n)
 						{
 							f && !c && f.exit(), s(n)
 						}
 					}; e.length > i;) c(e[i++]);
-					t._c = [], t._n = !1, n && !t._h && F(t)
+					t._c = [], t._n = !1, n && !t._h && A(t)
 				}))
 			}
 		},
-		F = function(t)
+		A = function(t)
 		{
-			g.call(a, (function()
+			m.call(a, (function()
 			{
 				var n, e, r, o = t._v,
-					i = N(t);
-				if (i && (n = w((function()
+					i = F(t);
+				if(i && (n = w((function()
 				{
-					M ? S.emit("unhandledRejection", o, t) : (e = a.onunhandledrejection) ? e(
+					E ? S.emit("unhandledRejection", o, t) : (e = a.onunhandledrejection) ? e(
 					{
 						promise: t,
 						reason: o
 					}) : (r = a.console) && r.error && r.error("Unhandled promise rejection", o)
-				})), t._h = M || N(t) ? 2 : 1), t._a = void 0, i && n.e) throw n.v
+				})), t._h = E || F(t) ? 2 : 1), t._a = void 0, i && n.e) throw n.v
 			}))
 		},
-		N = function(t)
+		F = function(t)
 		{
 			return 1 !== t._h && 0 === (t._a || t._c)
 				.length
 		},
-		I = function(t)
+		N = function(t)
 		{
-			g.call(a, (function()
+			m.call(a, (function()
 			{
 				var n;
-				M ? S.emit("rejectionHandled", t) : (n = a.onrejectionhandled) && n(
+				E ? S.emit("rejectionHandled", t) : (n = a.onrejectionhandled) && n(
 				{
 					promise: t,
 					reason: t._v
@@ -1531,18 +1597,18 @@ module.exports = function(t)
 		{
 			var n = this;
 			n._d || (n._d = !0, (n = n._w || n)
-				._v = t, n._s = 2, !n._a && (n._a = n._c.slice()), A(n, !0))
+				._v = t, n._s = 2, !n._a && (n._a = n._c.slice()), R(n, !0))
 		},
 		D = function(t)
 		{
 			var n, e = this;
-			if (!e._d)
+			if(!e._d)
 			{
 				e._d = !0, e = e._w || e;
 				try
 				{
-					if (e === t) throw j("Promise can't be resolved itself");
-					(n = R(t)) ? m((function()
+					if(e === t) throw j("Promise can't be resolved itself");
+					(n = I(t)) ? g((function()
 					{
 						var r = {
 							_w: e,
@@ -1556,7 +1622,7 @@ module.exports = function(t)
 						{
 							G.call(r, t)
 						}
-					})): (e._v = t, e._s = 1, A(e, !1))
+					})): (e._v = t, e._s = 1, R(e, !1))
 				}
 				catch (n)
 				{
@@ -1568,9 +1634,9 @@ module.exports = function(t)
 				}
 			}
 		};
-	C || (E = function(t)
+	C || (P = function(t)
 		{
-			v(this, E, O, "_h"), h(t), r.call(this);
+			v(this, P, O, "_h"), h(t), r.call(this);
 			try
 			{
 				t(s(D, this, 1), s(G, this, 1))
@@ -1583,12 +1649,12 @@ module.exports = function(t)
 		{
 			this._c = [], this._a = void 0, this._s = 0, this._d = !1, this._v = void 0, this._h = 0, this._n = !1
 		})
-		.prototype = e(75)(E.prototype,
+		.prototype = e(75)(P.prototype,
 		{
 			then: function(t, n)
 			{
-				var e = k(y(this, E));
-				return e.ok = "function" != typeof t || t, e.fail = "function" == typeof n && n, e.domain = M ? S.domain : void 0, this._c.push(e), this._a && this._a.push(e), this._s && A(this, !1), e.promise
+				var e = T(y(this, P));
+				return e.ok = "function" != typeof t || t, e.fail = "function" == typeof n && n, e.domain = E ? S.domain : void 0, this._c.push(e), this._a && this._a.push(e), this._s && R(this, !1), e.promise
 			},
 			catch: function(t)
 			{
@@ -1598,35 +1664,35 @@ module.exports = function(t)
 		{
 			var t = new r;
 			this.promise = t, this.resolve = s(D, t, 1), this.reject = s(G, t, 1)
-		}, x.f = k = function(t)
+		}, x.f = T = function(t)
 		{
-			return t === E || t === c ? new i(t) : o(t)
+			return t === P || t === c ? new i(t) : o(t)
 		}), l(l.G + l.W + l.F * !C,
 	{
-		Promise: E
-	}), e(22)(E, O), e(76)(O), c = e(3)[O], l(l.S + l.F * !C, O,
+		Promise: P
+	}), e(22)(P, O), e(76)(O), c = e(3)[O], l(l.S + l.F * !C, O,
 	{
 		reject: function(t)
 		{
-			var n = k(this);
+			var n = T(this);
 			return (0, n.reject)(t), n.promise
 		}
 	}), l(l.S + l.F * (u || !C), O,
 	{
 		resolve: function(t)
 		{
-			return b(u && this === c ? E : this, t)
+			return _(u && this === c ? P : this, t)
 		}
 	}), l(l.S + l.F * !(C && e(77)((function(t)
 	{
-		E.all(t)
-			.catch(T)
+		P.all(t)
+			.catch(k)
 	}))), O,
 	{
 		all: function(t)
 		{
 			var n = this,
-				e = k(n),
+				e = T(n),
 				r = e.resolve,
 				o = e.reject,
 				i = w((function()
@@ -1650,7 +1716,7 @@ module.exports = function(t)
 		race: function(t)
 		{
 			var n = this,
-				e = k(n),
+				e = T(n),
 				r = e.reject,
 				o = w((function()
 				{
@@ -1667,7 +1733,7 @@ module.exports = function(t)
 {
 	t.exports = function(t, n, e, r)
 	{
-		if (!(t instanceof n) || void 0 !== r && r in t) throw TypeError(e + ": incorrect invocation!");
+		if(!(t instanceof n) || void 0 !== r && r in t) throw TypeError(e + ": incorrect invocation!");
 		return t
 	}
 }, function(t, n, e)
@@ -1682,22 +1748,22 @@ module.exports = function(t)
 		f = {};
 	(n = t.exports = function(t, n, e, l, p)
 	{
-		var h, v, d, y, g = p ? function()
+		var h, v, d, y, m = p ? function()
 			{
 				return t
 			} : a(t),
-			m = r(e, l, n ? 2 : 1),
+			g = r(e, l, n ? 2 : 1),
 			x = 0;
-		if ("function" != typeof g) throw TypeError(t + " is not iterable!");
-		if (i(g))
+		if("function" != typeof m) throw TypeError(t + " is not iterable!");
+		if(i(m))
 		{
-			for (h = u(t.length); h > x; x++)
-				if ((y = n ? m(c(v = t[x])[0], v[1]) : m(t[x])) === s || y === f) return y
+			for(h = u(t.length); h > x; x++)
+				if((y = n ? g(c(v = t[x])[0], v[1]) : g(t[x])) === s || y === f) return y
 		}
 		else
-			for (d = g.call(t); !(v = d.next())
+			for(d = m.call(t); !(v = d.next())
 				.done;)
-				if ((y = o(d, m, v.value, n)) === s || y === f) return y
+				if((y = o(d, g, v.value, n)) === s || y === f) return y
 	})
 	.BREAK = s, n.RETURN = f
 }, function(t, n, e)
@@ -1732,7 +1798,7 @@ module.exports = function(t)
 	t.exports = e(3)
 		.getIteratorMethod = function(t)
 		{
-			if (null != t) return t[o] || t["@@iterator"] || i[r(t)]
+			if(null != t) return t[o] || t["@@iterator"] || i[r(t)]
 		}
 }, function(t)
 {
@@ -1768,7 +1834,7 @@ module.exports = function(t)
 		var t, n, e, s = function()
 		{
 			var r, o;
-			for (a && (r = c.domain) && r.exit(); t;)
+			for(a && (r = c.domain) && r.exit(); t;)
 			{
 				o = t.fn, t = t.next;
 				try
@@ -1782,12 +1848,12 @@ module.exports = function(t)
 			}
 			n = void 0, r && r.enter()
 		};
-		if (a) e = function()
+		if(a) e = function()
 		{
 			c.nextTick(s)
 		};
-		else if (!i || r.navigator && r.navigator.standalone)
-			if (u && u.resolve)
+		else if(!i || r.navigator && r.navigator.standalone)
+			if(u && u.resolve)
 			{
 				var f = u.resolve(void 0);
 				e = function()
@@ -1831,7 +1897,7 @@ module.exports = function(t)
 	var r = e(5);
 	t.exports = function(t, n, e)
 	{
-		for (var o in n) e && t[o] ? t[o] = n[o] : r(t, o, n[o]);
+		for(var o in n) e && t[o] ? t[o] = n[o] : r(t, o, n[o]);
 		return t
 	}
 }, function(t, n, e)
@@ -1873,7 +1939,7 @@ module.exports = function(t)
 	{}
 	t.exports = function(t, n)
 	{
-		if (!n && !o) return !1;
+		if(!n && !o) return !1;
 		var e = !1;
 		try
 		{
@@ -1991,8 +2057,8 @@ module.exports = function(t)
 			.join("") != r
 	})) ? function(t)
 	{
-		for (var n = c(t), e = arguments.length, a = 1, s = o.f, f = i.f; e > a;)
-			for (var l, p = u(arguments[a++]), h = s ? r(p)
+		for(var n = c(t), e = arguments.length, a = 1, s = o.f, f = i.f; e > a;)
+			for(var l, p = u(arguments[a++]), h = s ? r(p)
 				.concat(s(p)) : r(p), v = h.length, d = 0; v > d;) f.call(p, l = h[d++]) && (n[l] = p[l]);
 		return n
 	} : a
