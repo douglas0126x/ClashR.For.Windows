@@ -90,3 +90,9 @@
 "Open logs folder"		"打开日志文件夹"
 "Try to repair"		"尝试修复"
 "Could not connect to Clash Core"	"无法连接到Clash Core"
+
+"Edit in Text Mode"		"编辑文本"
+"Could not switch to this profile!"	"无法切换到此配置"
+"Cannot set system proxy"	"无法设置系统代理"
+"We found a new version for you, install it?"	"我们为您找到了一个新版本，要安装吗？"
+"Download and install (might take a few minutes)", "Ignore this version", "Do not show this dialog anymore"	"下载并安装（可能需要几分钟）","忽略此版本","不再显示此对话框"
