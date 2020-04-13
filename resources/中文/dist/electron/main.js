@@ -771,7 +771,7 @@ module.exports = function(t)
 			type: "separator"
 		},
 		{
-			label: "Proxy Mode",
+			label: "代理模式",
 			id: "mode",
 			submenu: [
 			{
