@@ -5,3 +5,8 @@
 "Dashboard has crashed!"	"面板崩溃了！"
 "Reload"			"刷新"
 "Exit"			"退出"
+"Proxy Mode"		"代理模式"
+"Global"			"全局"
+"Rule"			"规则"
+"Direct"			"直连"
+"System Proxy"		"系统代理"

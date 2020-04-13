@@ -46,7 +46,7 @@
 "Add"			"添加"
 "Top 100 matching rules(" + e._s(e.memoryData.length) + ")."	"前100个匹配规则(" + e._s(e.memoryData.length) + ")."
 "Please confirm"		"请确认"
-"config.yaml and country.mmdb will be removed."	"config.yaml和country.mmdb将被删除。"
+"config.yaml and country.mmdb will be removed."	"即将删除config.yaml和country.mmdb。"
 'Are you sure to delete "' + a + '"?'			'您确定要删除 "' + a + '"?'
 "Yes", "No"		"是", "否"
 "fiter by keywords"		"按关键字过滤"
