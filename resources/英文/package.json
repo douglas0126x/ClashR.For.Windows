@@ -1,6 +1,6 @@
 {
   "name": "clash_win",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "author": "Fndroid <18825176954@163.com>",
   "description": "A Windows client based on Clash",
   "license": "MIT",
@@ -9,7 +9,6 @@
     "axios": "^0.18.1",
     "electron-is-dev": "^1.1.0",
     "electron-log": "^4.1.0",
-    "emoji-regex": "^7.0.1",
     "got": "^9.6.0",
     "lodash": "^4.17.15",
     "moment": "^2.22.2",
